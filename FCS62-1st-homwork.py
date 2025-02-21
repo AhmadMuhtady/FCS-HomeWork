@@ -18,3 +18,5 @@
 # • Assume Nabiha saves an additional random amount (e.g., $50) each month, and you need to calculate how much would be left if this amount is divided by the total amount allocated to savings. 
 
 # Finally, the script should output all the results in a readable format.
+
+user1 = 4
