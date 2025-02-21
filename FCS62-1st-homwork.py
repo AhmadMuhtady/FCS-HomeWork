@@ -40,3 +40,24 @@ annual_remaining_salary = remaining_salary * 12
 bonous_salary = Salary ** 2
 annual_extra_savings = extra_savings * 12
 remaining_amount = annual_extra_savings / savings
+
+print("\n       Financial Overview for", Month)
+print("=" * 45)
+print(f"{'Balance':<16}{'Monthly Amount':<16}{'Annual Amount'}")
+print("=" * 45)
+print(f"{'Savings':<16}${savings:<16}${annual_savings:.1f}")
+print(f"{'Rent':<16}${rent:<16}${annual_rent:.1f}")
+print(f"{'Electricity':<16}${electricity:<16.1f}${annual_electricity:.1f}")
+print("_" * 45)
+print(f"{'Total Expenses':<16}${total_monthly_expenses:<16}${total_annual_expenses:.1f}")
+print(f"{'Salary':<16}${Salary:<16}${annual_salary:.1f}")
+print("_" * 45)
+print(f"{'Remaining':<16}${remaining_salary:<16}${annual_remaining_salary:.1f}")
+print("=" * 45)
+print(f"{'Bonous Salary':<16}${bonous_salary:.1f}")
+print("=" *45)  
+print(f"{Salary:<16.1f}${Salary}")
+print(f"{'Savings':<16}%{savings_percentage*100}")
+print(f"{'Extra savings':<16}${extra_savings:.1f}")
+print(f"{'Remaining amount':<16} {remaining_amount:.1f} " + 'month of saving yearly')
+print("=" * 45)
