@@ -19,12 +19,15 @@
 
 # Finally, the script should output all the results in a readable format.
 
-Salary = int((input("Enter your salary for the month: ")))
-Month = str(input("Enter the name of the month you are storing the salary for: "))
-savings_percentage = float(input("Enter the percentage of your salary you want to allocate to savings: ")) / 100
-rent_percentage = float(input("Enter the percentage of your salary you want to allocate to rent: ")) / 100
-electricity_percentage = float(input("Enter the percentage of your salary you want to allocate to electricity: ")) / 100
-extra_savings = int(input("Enter the amount you want to save extra: "))
+action = "yes"
+while action != "no":  
+    Salary = int((input("Enter your salary for the month: ")))
+    Month = str(input("Enter the name of the month you are storing the salary for: "))
+    savings_percentage = float(input("Enter the percentage of your salary you want to allocate to savings: ")) / 100
+    rent_percentage = float(input("Enter the percentage of your salary you want to allocate to rent: ")) / 100
+    electricity_percentage = float(input("Enter the percentage of your salary you want to allocate to electricity: ")) / 100
+    extra_savings = int(input("Enter the amount you want to save extra: "))
+    action = input("Do you want to enter another Financial repot? (Enter 'no' to stop) ")
 
 savings= Salary * savings_percentage
 rent = Salary * rent_percentage
