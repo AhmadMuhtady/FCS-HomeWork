@@ -29,6 +29,7 @@ while action != "no":
     extra_savings = int(input("Enter the amount you want to save extra: "))
     action = input("Do you want to enter another Financial repot? (Enter 'no' to stop) ")
 
+
 savings= Salary * savings_percentage
 rent = Salary * rent_percentage
 electricity = Salary * electricity_percentage
@@ -44,6 +45,14 @@ bonous_salary = Salary ** 2
 annual_extra_savings = extra_savings * 12
 remaining_amount = annual_extra_savings / savings
 
+financal_overview = {
+    "Salary": Salary,
+    "Month": Month,
+    "Savings": savings,
+    "Rent": rent,
+    "Electricity": electricity,
+    "Total_monthly_expenses": total_monthly_expenses,
+}
 print("\n       Financial Overview for", Month)
 print("=" * 45)
 print(f"{'Balance':<16}{'Monthly Amount':<16}{'Annual Amount'}")
