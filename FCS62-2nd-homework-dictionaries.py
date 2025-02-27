@@ -54,3 +54,22 @@ print(count_words(example_2))
 # a) Print .
 # b) Add a new employee "David" in "Engineering" with role "Data Scientist" and age 27.
 # c) Write a function to count the total number of employees in the company.
+company_employees = {
+"Engineering": {
+"Alice": {"age": 30, "role": "Software Engineer"},
+"Bob": {"age": 28, "role": "DevOps Engineer"}
+},
+"HR": {
+"Charlie": {"age": 35, "role": "HR Manager"}
+}
+}
+print(company_employees)
+company_employees["Engineering"]["David"] = {"age": 27, "role": "Data Scientist"}
+print(company_employees)
+def count_employees(company_employees):
+    total_employees = 0
+    for department in company_employees:
+        total_employees += len(company_employees[department])
+    return total_employees
+print(count_employees(company_employees))
+
