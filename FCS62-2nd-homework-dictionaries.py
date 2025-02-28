@@ -80,3 +80,13 @@ print(count_employees(company_employees))
 
 # Expected Output:
 # {10: ["Alice", "Charlie"], 20: ["Bob"], 30: ["David"]}
+example_4 = {"Alice": 10, "Bob": 20, "Charlie": 10, "David": 30}
+def invert_dictionary(dictionary):
+    inverted_dict = {}
+    for key, value in dictionary.items():
+        if value in inverted_dict:
+            inverted_dict[value].append(key)
+        else:
+            inverted_dict[value] = [key]
+    return inverted_dict
+print(invert_dictionary(example_4))
